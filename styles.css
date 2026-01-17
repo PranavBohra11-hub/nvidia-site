@@ -201,3 +201,86 @@ body {
   pointer-events: auto;
   visibility: visible;
 }
+
+
+
+/* -----------------------------------
+   Design Section Typography
+----------------------------------- */
+.HPCSubHead {
+  font-family: "Roboto", sans-serif;
+  color: rgba(94, 94, 94, 0.765);
+}
+
+.HPCCards {
+  font-family: "Roboto", sans-serif;
+}
+
+/* -----------------------------------
+   Design Cards (Shared Styles)
+----------------------------------- */
+.HPCOne,
+.HPCTwo,
+.HPCThree,
+.HPCFour,
+.HPCFive,
+.HPCSix {
+  box-shadow: 0px 0px 20px 0.2px rgba(0, 0, 0, 0.432);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* -----------------------------------
+   Image Sections (Shared Styles)
+----------------------------------- */
+.imgsectionOne,
+.imgsectionTwo,
+.imgsectionThree,
+.imgsectionFour,
+.imgsectionFive,
+.imgsectionSix {
+  height: 350px;
+  border: 1px solid transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* -----------------------------------
+   Individual Background Images
+----------------------------------- */
+.imgsectionOne {
+  background-image: url(
+    https://blogs.nvidia.com/wp-content/uploads/2025/10/CAE-Image.jpg
+  );
+}
+
+.imgsectionTwo {
+  background-image: url(
+    https://blogs.nvidia.com/wp-content/uploads/2025/12/end-to-end-press-best-models-trained-1920x1080-4660123.jpg
+  );
+}
+
+.imgsectionThree {
+  background-image: url(
+    https://tse4.mm.bing.net/th/id/OIP.zFunByojg6-K5AHCXrmUqAHaD7?rs=1&pid=ImgDetMain&o=7&rm=3
+  );
+}
+
+.imgsectionFour {
+  background-image: url(
+    https://www.servethehome.com/wp-content/uploads/2024/03/NVIDIA-DGX-GB200-NVL72-Switch-Tray-Internal-1920x1240.jpeg
+  );
+}
+
+.imgsectionFive {
+  background-image: url(
+    https://blogs.nvidia.com/wp-content/uploads/2025/05/blackwell-corp-blog-dell-blackwell-momentum-2-1280x680-1.png
+  );
+}
+
+.imgsectionSix {
+  background-image: url(
+    https://s3.amazonaws.com/cms.ipressroom.com/219/files/202509/68da29813d6332546f0426c7_nvidia-corl-2025/nvidia-corl-2025_mid.png
+  );
+}
