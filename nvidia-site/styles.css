@@ -60,7 +60,8 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 40px 0px;
   transform: translateX(-100%);
@@ -191,7 +192,9 @@ body {
   visibility: visible;
 }
 
-.SolutionLi { position: relative; }
+.SolutionLi {
+  position: relative;
+}
 
 .SolutionLi:hover .SolutionData,
 .SolutionData:hover {
@@ -201,3 +204,56 @@ body {
   pointer-events: auto;
   visibility: visible;
 }
+
+.DesignSubHead {
+  font-family: "Roboto", sans-serif;
+  color: rgba(94, 94, 94, 0.765);
+}
+
+.DesignOne, .DesignTwo, .DesignThree, .DesignFour, .DesignFive, .DesignSix {
+  box-shadow: 0px 0px 20px 0.2px rgba(0, 0, 0, 0.432);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.DesignCards {
+  font-family: "Roboto", sans-serif;
+}
+
+.imgsectionOne, .imgsectionTwo, .imgsectionThree, .imgsectionFour, .imgsectionFive, .imgsectionSix {
+  height: 350px;
+  border: 1px solid transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgsectionOne {
+  background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/learn/learning-path/openusd/learn-openusd-og-1200x630.jpg);
+}
+
+
+.imgsectionTwo {
+  background-image: url(https://gam3s.gg/_next/image/?url=https%3A%2F%2Fassets.gam3s.gg%2FNvidia_Unveils_AI_Blueprint_to_Transform_Video_Analysis_e79e3f368a.png&w=3840&q=75);
+}
+
+
+.imgsectionThree {
+  background-image: url(https://blogs.nvidia.com/wp-content/uploads/2025/09/UK-Visit-MAT10296_isp.jpg);
+}
+
+
+.imgsectionFour {
+  background-image: url(https://aousd.org/wp-content/uploads/sites/28/2024/08/unnamed-3-1024x677.png);
+}
+
+
+.imgsectionFive {
+  background-image: url(https://blogs.nvidia.com/wp-content/uploads/2025/05/PRESS-ov-cptx25-ai-factory-digital-twin-press-1600x900-2.png);
+}
+
+
+.imgsectionSix {
+  background-image: url(https://developer-blogs.nvidia.com/wp-content/uploads/2025/05/nvidia-air-topology-1.png);
+}
+
