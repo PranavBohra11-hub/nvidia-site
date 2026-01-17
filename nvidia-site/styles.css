@@ -60,7 +60,8 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 40px 0px;
   transform: translateX(-100%);
@@ -191,7 +192,9 @@ body {
   visibility: visible;
 }
 
-.SolutionLi { position: relative; }
+.SolutionLi {
+  position: relative;
+}
 
 .SolutionLi:hover .SolutionData,
 .SolutionData:hover {
@@ -200,4 +203,76 @@ body {
   transform: translateY(0);
   pointer-events: auto;
   visibility: visible;
+}
+
+.gaming-section {
+  font-family: "Roboto", sans-serif;
+}
+
+.GamingSubHead {
+  font-family: "Roboto", sans-serif;
+  color: rgba(94, 94, 94, 0.765);
+}
+
+.FirstGame,
+.SecondGame,
+.ThirdGame,
+.FourthGame {
+  border: 1px solid transparent;
+  width: 85%;
+  margin: auto;
+  margin-top: 10px;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FirstGame {
+  background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4090/nvidia-encoder.jpg);
+}
+
+.SecondGame {
+  background-image: url(https://images.fonearena.com/blog/wp-content/uploads/2020/02/Nvidia-GeForce-Now.jpg);
+}
+
+.ThirdGame {
+  background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/laptops/50-series/geforce-rtx-50-series-laptops-learn-og-1200x630@2x.jpg);
+}
+
+.FourthGame {
+  background-image: url(https://www.pcworld.com/wp-content/uploads/2022/12/death-stranding-100851190-orig.jpg?quality=50&strip=all);
+}
+
+@media (max-width: 768px) {
+  .FirsGameContent,
+  .SecondGameContent,
+  .ThirdGameContent,
+  .FourthGameContent {
+    border: 2px solid rgb(94, 255, 0);
+    width: 90%;
+    height: 80%;
+    border-radius: 20px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.863);
+  }
+}
+
+@media (min-width: 768px) {
+  .FirsGameContent,
+  .SecondGameContent,
+  .ThirdGameContent,
+  .FourthGameContent {
+    border: 2px solid rgb(94, 255, 0);
+    width: 70%;
+    height: 70%;
+    overflow: auto;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.863);
+  }
 }
