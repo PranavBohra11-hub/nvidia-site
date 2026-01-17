@@ -60,7 +60,8 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 40px 0px;
   transform: translateX(-100%);
@@ -191,7 +192,9 @@ body {
   visibility: visible;
 }
 
-.SolutionLi { position: relative; }
+.SolutionLi {
+  position: relative;
+}
 
 .SolutionLi:hover .SolutionData,
 .SolutionData:hover {
@@ -200,4 +203,53 @@ body {
   transform: translateY(0);
   pointer-events: auto;
   visibility: visible;
+}
+
+.footersection {
+  background-color: black;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.CompanyInfo,
+.NewsEvent,
+.PopularLinks, 
+.Products {
+  width: 400px;
+  border: 1px solid transparent;
+  background-color: rgba(128, 128, 128, 0.413);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.CompanyInfo h2,
+.NewsEvent h2,
+.PopularLinks h2, 
+.Products h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.UL li {
+  font-size: 18px;
+  color: #76b900;
+}
+
+.fa-envelope {
+  color: #76b900;
+}
+
+.icons i {
+  color: rgb(158, 158, 158);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.LegalList li {
+  border-left: 1px solid gray;
+  padding-left: 10px;
 }
