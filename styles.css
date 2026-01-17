@@ -60,7 +60,8 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 40px 0px;
   transform: translateX(-100%);
@@ -191,7 +192,9 @@ body {
   visibility: visible;
 }
 
-.SolutionLi { position: relative; }
+.SolutionLi {
+  position: relative;
+}
 
 .SolutionLi:hover .SolutionData,
 .SolutionData:hover {
@@ -200,4 +203,37 @@ body {
   transform: translateY(0);
   pointer-events: auto;
   visibility: visible;
+}
+
+.about-us {
+  border: 1px solid transparent;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 968px) {
+  .AboutData {
+    border: 1px solid transparent;
+    height: 60vh;
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+    background-image: url(https://wallpaperaccess.com/full/207985.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 968px) {
+  .AboutData {
+    border: 1px solid transparent;
+    height: 60vh;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    background-image: url(https://wallpaperaccess.com/full/207985.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
