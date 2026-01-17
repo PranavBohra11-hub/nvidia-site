@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,6 +10,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
     <title>Nvidia</title>
@@ -17,7 +25,7 @@
   <body>
     <header class="navBar">
       <nav
-        class="lg:hidden navBar-section"
+        class="lg:hidden rounded-xl p-1 navBar-section"
         role="navigation"
         aria-label="Main navigation"
       >
@@ -34,12 +42,7 @@
           </label>
 
           <div class="NavMenu">
-            <img
-              src="https://blog.logomyway.com/wp-content/uploads/2022/01/NVIDIA-logo-768x224.png"
-              alt="Nvidia-logo"
-            />
-
-            <div  class="border-transparent mt-10">
+            <div class="border-transparent mt-10">
               <div>
                 <input
                   type="checkbox"
@@ -110,13 +113,19 @@
           />
         </div>
 
-        <div data-aos="zoom-in" class="SignIn" role="button" tabindex="0" aria-label="Sign in">
+        <div
+          data-aos="zoom-in"
+          class="SignIn"
+          role="button"
+          tabindex="0"
+          aria-label="Sign in"
+        >
           <i class="fa-regular fa-user" aria-hidden="true"></i> Sign In
         </div>
       </nav>
 
       <nav
-        class="hidden lg:flex justify-between"
+        class="hidden lg:flex justify-between bg-white rounded-xl p-1"
         role="navigation"
         aria-label="Main navigation"
       >
@@ -184,6 +193,30 @@
         </div>
       </nav>
     </header>
+
+    <section class="hero-section" role="banner">
+      <div class="UpperLayer">
+        <h1 class="Head" data-aos="fade-down">Data Center</h1>
+        <p class="SubHead" data-aos="fade-left">
+          NVIDIA DGX SuperPOD Sets the Stage for Rubin-Based Systems
+        </p>
+        <p class="Lines" data-aos="fade-right">
+          NVIDIA DGX SuperPOD serves as a blueprint for deploying AI factories
+          built on the NVIDIA Rubin architecture. Catch up on the latest news
+          and announcements on AI Infrastructure, robotics, automotive, gaming,
+          and more.
+        </p>
+        <a
+          class="ReadAnn"
+          href="https://blogs.nvidia.com/blog/dgx-superpod-rubin/?nvid=nv-int-cwmfg-626024"
+          data-aos="fade-up"
+          role="button"
+          aria-label="Read NVIDIA DGX SuperPOD announcement"
+        >
+          Read Announcement
+        </a>
+      </div>
+    </section>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
