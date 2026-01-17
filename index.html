@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,14 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
     />
 
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
@@ -39,7 +47,7 @@
               alt="Nvidia-logo"
             />
 
-            <div  class="border-transparent mt-10">
+            <div class="border-transparent mt-10">
               <div>
                 <input
                   type="checkbox"
@@ -110,7 +118,13 @@
           />
         </div>
 
-        <div data-aos="zoom-in" class="SignIn" role="button" tabindex="0" aria-label="Sign in">
+        <div
+          data-aos="zoom-in"
+          class="SignIn"
+          role="button"
+          tabindex="0"
+          aria-label="Sign in"
+        >
           <i class="fa-regular fa-user" aria-hidden="true"></i> Sign In
         </div>
       </nav>
@@ -184,6 +198,40 @@
         </div>
       </nav>
     </header>
+
+    <section
+      class="border border-transparent gtc-section mt-60 bg-gray-200 md:flex md:justify-evenly"
+    >
+      <article
+        class="md:flex md:justify-center md:items-center md:w-[70%] gtcZone"
+      >
+        <img
+          data-aos="fade-right"
+          class="m-10 w-20 h-20 lg:w-40 lg:h-40"
+          src="https://info.nvidia.com/rs/156-OFN-742/images/gtc23-logo-184-184.png"
+          alt="NVIDIA GTC 2026 conference logo"
+        />
+
+        <div data-aos="fade-left" class="">
+          <h2 class="md:font-[600] md:text-[40px] GTC-head">
+            GTC 2026 Registration Is Now Open
+          </h2>
+          <p class="mb-5 GTCP">
+            Join developers, researchers, and business leaders on March 16–19 as
+            they come together to explore the next wave of AI innovation. Take
+            advantage of the early rate and register by February 2 to save.
+            <a
+              href="#"
+              class="inline-flex items-center gap-2 font-[600] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-green-600"
+              aria-label="Register now for NVIDIA GTC 2026"
+            >
+              Get Your Pass Now
+              <i class="text-green-600 fa-solid fa-chevron-right"></i>
+            </a>
+          </p>
+        </div>
+      </article>
+    </section>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
