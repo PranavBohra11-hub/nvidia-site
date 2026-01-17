@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.navBar {
+  border: 1px solid transparent;
+  padding: 5px;
+  box-shadow: 0px 0px 20px 0.5px rgba(0, 0, 0, 0.477);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.fa-bars {
+  position: relative;
+  z-index: 999;
+}
+
+.CompanyLogo img {
+  width: 150px;
+  height: 40px;
+}
+
+.navBar-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Icons {
+  padding-left: 20px;
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.SignIn {
+  padding-right: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#NavBar {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.NavMenu {
+  border: 1px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 40px 0px;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.7s ease all;
+}
+
+#NavBar:checked ~ .NavMenu {
+  transform: translateX(0%);
+  opacity: 1;
+  transition: 0.7s ease all;
+}
+
+.NavMenu img {
+  width: 200px;
+  height: 70px;
+  margin: auto;
+}
+
+#products,
+#solutions {
+  position: absolute;
+  opacity: 0;
+}
+
+.FirstAccordion,
+.SecondAccordion {
+  height: 0px;
+  overflow: hidden;
+  transition: 0.6s ease all;
+  background-color: rgba(227, 227, 227, 0.79);
+}
+
+.FirstAccordion ul li {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.SecondAccordion ul li {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+#products:checked ~ .FirstAccordion {
+  height: 200px;
+  transition: 0.6s ease all;
+}
+
+#products:checked + label .fa-chevron-down {
+  transition: 0.6s ease all;
+  transform: rotate(180deg);
+}
+
+#solutions:checked ~ .SecondAccordion {
+  height: 200px;
+  transition: 0.6s ease all;
+}
+
+#solutions:checked + label .fa-chevron-down {
+  transition: 0.6s ease all;
+  transform: rotate(180deg);
+}
+
+.other-options ul li {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.NavBarUl li span {
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.NavBarUl li span::before {
+  content: "";
+  border: 1px solid transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: 0.7s ease all;
+  transform: translateX(-100%);
+}
+
+.NavBarUl li span:hover::before {
+  transition: 0.7s ease all;
+  transform: translateX(0%);
+}
+
+.ProductData,
+.SolutionData {
+  border: 2px solid green;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: -210px;
+  background-color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.7s ease all;
+  pointer-events: none;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0.5px rgba(0, 0, 0, 0.505);
+}
+
+.ProductData ul li {
+  position: relative;
+  margin-top: 10px;
+}
+
+.SolutionData ul li {
+  position: relative;
+  margin-top: 10px;
+}
+
+.ProductLi:hover .ProductData,
+.ProductData:hover {
+  border: 2px solid green;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.SolutionLi { position: relative; }
+
+.SolutionLi:hover .SolutionData,
+.SolutionData:hover {
+  border: 2px solid green;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+}
