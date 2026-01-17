@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <title>Nvidia</title>
+  </head>
+  <body>
+    <header class="navBar">
+      <nav
+        class="lg:hidden navBar-section"
+        role="navigation"
+        aria-label="Main navigation"
+      >
+        <div data-aos="zoom-in" class="Icons flex justify-center items-center">
+          <input
+            type="checkbox"
+            id="NavBar"
+            aria-label="Open navigation menu"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          />
+          <label for="NavBar">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </label>
+
+          <div class="NavMenu">
+            <img
+              src="https://blog.logomyway.com/wp-content/uploads/2022/01/NVIDIA-logo-768x224.png"
+              alt="Nvidia-logo"
+            />
+
+            <div class="border-transparent mt-10">
+              <div>
+                <input
+                  type="checkbox"
+                  id="products"
+                  aria-controls="products-panel"
+                  aria-expanded="false"
+                />
+                <label
+                  for="products"
+                  class="flex justify-between items-center p-2 LableOne"
+                >
+                  Products
+                  <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </label>
+                <div class="FirstAccordion">
+                  <ul>
+                    <li>Cloud Services</li>
+                    <li>Data Center</li>
+                    <li>Embedded System</li>
+                    <li>Laptops</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-transparent">
+              <div class="">
+                <input type="checkbox" id="solutions" />
+                <label
+                  for="solutions"
+                  class="flex justify-between items-center p-2"
+                >
+                  Solutions <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <div class="SecondAccordion">
+                  <ul>
+                    <li>Artifical Intelligence</li>
+                    <li>Cloud and Data Center</li>
+                    <li>Robotics and Edge AI</li>
+                    <li>Autonomous Vehicles</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-transparent other-options">
+              <ul role="list">
+                <li tabindex="0">Industries</li>
+                <li tabindex="0">Shop</li>
+                <li tabindex="0">Drivers</li>
+                <li tabindex="0">Support</li>
+              </ul>
+            </div>
+          </div>
+
+          <i
+            class="fa-solid fa-magnifying-glass"
+            role="button"
+            aria-label="Search"
+            tabindex="0"
+          ></i>
+        </div>
+
+        <div data-aos="zoom-in" class="CompanyLogo">
+          <img
+            src="https://blog.logomyway.com/wp-content/uploads/2022/01/NVIDIA-logo-768x224.png"
+            alt="Nvidia-logo"
+          />
+        </div>
+
+        <div
+          data-aos="zoom-in"
+          class="SignIn"
+          role="button"
+          tabindex="0"
+          aria-label="Sign in"
+        >
+          <i class="fa-regular fa-user" aria-hidden="true"></i> Sign In
+        </div>
+      </nav>
+
+      <nav
+        class="hidden lg:flex justify-between"
+        role="navigation"
+        aria-label="Main navigation"
+      >
+        <div data-aos="zoom-in" class="CompanyLogo flex gap-20">
+          <img
+            src="https://blog.logomyway.com/wp-content/uploads/2022/01/NVIDIA-logo-768x224.png"
+            alt="Nvidia-logo"
+          />
+        </div>
+
+        <div data-aos="zoom-in" class="border-transparent flex">
+          <ul class="NavBarUl flex justify-center items-center gap-20">
+            <li>
+              <div class="ProductLi">
+                <span>Products</span>
+                <div
+                  class="border-transparent ProductData"
+                  role="menu"
+                  aria-label="Products submenu"
+                >
+                  <ul>
+                    <li>Cloud Services</li>
+                    <li>Data Center</li>
+                    <li>Embedded System</li>
+                    <li>Laptops</li>
+                  </ul>
+
+                  <div></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="SolutionLi">
+                <span>Solutions</span>
+                <div
+                  class="border-transparent SolutionData"
+                  role="menu"
+                  aria-label="Solution submenu"
+                >
+                  <ul>
+                    <li>Artifical Intelligence</li>
+                    <li>Cloud and Data Center</li>
+                    <li>Robotics and Edge AI</li>
+                    <li>Autonomous Vehicles</li>
+                  </ul>
+
+                  <div></div>
+                </div>
+              </div>
+            </li>
+            <li><span>Industries</span></li>
+            <li><span>Shop</span></li>
+            <li><span>Drives</span></li>
+            <li><span>Support</span></li>
+          </ul>
+        </div>
+
+        <div data-aos="zoom-in" class="border-transparent flex mr-10">
+          <ul class="flex justify-center items-center gap-5">
+            <li>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li><i class="fa-regular fa-user"></i></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="automotive-section text-center mt-60">
+      <div class="automotiveZone">
+        <h1 class="font-[500] text-[30px] font-[600]" data-aos="zoom-in">
+          Automotive
+        </h1>
+        <p
+          class="text-center w-[80%] m-auto mt-5 AutoSubHead"
+          data-aos="zoom-in"
+        >
+          From developing autonomous vehicles on NVIDIA DRIVE® to creating
+          factory digital twins and retail experiences with NVIDIA Omniverse,
+          our automotive solutions offer the performance and scalability to
+          design, visualize, simulate, and create all types of future
+          transportation.
+        </p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-wrap gap-10 lg:gap-30 autoCards"
+      >
+        <article class="mt-5 FirstAuto" data-aos="zoom-in">
+          <div class="FrameCard">
+            <div class="frontFace">
+              <img
+                class="w-30 h-30"
+                src="https://blogs.nvidia.com/wp-content/uploads/2025/03/nvidiabooth.jpg"
+                alt=""
+              />
+
+              <p
+                class="text-[20px] text-[white] font-[600] flex justify-center items-center m-auto mt-5 lg:mt-10 w-[80%]"
+              >
+                OpenUSD and NVIDIA Halos Accelerate Physical AI Systems
+              </p>
+
+              <button
+                class="lg:hidden border absolute bottom-5 p-2 bg-black text-[white] left-[50%] translate-x-[-50%]"
+              >
+                Explore More
+              </button>
+            </div>
+            <div
+              class="text-[white] flex justify-center items-center flex-col backFace"
+            >
+              <h3 class="font-[600] text-[green] text-[25px]">
+                Explore it <i class="fa-solid fa-arrow-down"></i>
+              </h3>
+              <p class="w-[85%] mt-5">
+                NVIDIA is expanding its automotive ecosystem to enable safer,
+                smarter, and more autonomous vehicles by combining AI,
+                accelerated computing, and advanced software platforms that
+                support development from the cloud to the car.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="mt-5 FirstAuto" data-aos="fade-up">
+          <div class="FrameCard">
+            <div class="frontFace">
+              <img
+                class="w-30 h-30"
+                src="https://s3.amazonaws.com/cms.ipressroom.com/219/files/202510/6903a82c3d63323c42cd9e2f_nvidia-and-hyundai-motor-group/nvidia-and-hyundai-motor-group_mid.jpg"
+                alt=""
+              />
+
+              <p
+                class="text-[20px] text-[white] font-[600] flex justify-center items-center m-auto lg:mt-10 mt-5 w-[80%]"
+              >
+                Nvidia and Hyundai MotorGroup Team to Power AI-dRIVEN Mobility
+                Solutions
+              </p>
+
+              <button
+                class="lg:hidden border absolute bottom-5 p-2 bg-black text-[white] left-[50%] translate-x-[-50%]"
+              >
+                Explore More
+              </button>
+            </div>
+            <div class="text-[white] flex justify-center items-center flex-col backFace">
+              <h3 class="font-[600] text-[green] text-[25px]">
+                Explore it <i class="fa-solid fa-arrow-down"></i>
+              </h3>
+              <p class="w-[85%] mt-5">
+                Through strategic partnerships with global automakers and
+                mobility leaders, NVIDIA is accelerating next-generation
+                autonomous driving by delivering powerful AI infrastructure,
+                simulation tools, and scalable computing solutions.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="mt-5 FirstAuto" data-aos="zoom-in">
+          <div class="FrameCard">
+            <div class="frontFace">
+              <img
+                class="w-30 h-30"
+                src="https://blogs.nvidia.com/wp-content/uploads/2025/06/hexagon-1280x680-1.jpg"
+                alt=""
+              />
+
+              <p
+                class="text-[20px] text-[white] font-[600] flex justify-center items-center m-auto mt-5 lg:mt-10 w-[80%]"
+              >
+                NVIDIA Wins Second CVPR Autonomous Grand Challenge
+              </p>
+
+              <button
+                class="lg:hidden border absolute bottom-5 p-2 bg-black text-[white] left-[50%] translate-x-[-50%]"
+              >
+                Explore More
+              </button>
+            </div>
+            <div class="text-[white] flex justify-center items-center flex-col backFace">
+              <h3 class="font-[600] text-[green] text-[25px]">
+                Explore it <i class="fa-solid fa-arrow-down"></i>
+              </h3>
+              <p class="w-[85%] mt-5">
+                NVIDIA continues to advance physical AI for transportation by
+                integrating simulation, training, and real-world deployment,
+                helping innovators bring intelligent vehicles safely onto public
+                roads.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="mt-5 FirstAuto" data-aos="fade-up">
+          <div class="FrameCard">
+            <div class="frontFace">
+              <img
+                class="w-30 h-30"
+                src="https://roboticvehicletechnology.com/wp-content/uploads/2025/03/general-motors-and-nvidia-collaboration-1.jpg"
+                alt=""
+              />
+              <p
+                class="text-[20px] text-[white] font-[600] flex justify-center items-center m-auto mt-5 lg:mt-10 w-[80%]"
+              >
+                GM ad NVIDIA Collaborate on AI for Next-Gen Vehicle Experience
+                and Manufacturing
+              </p>
+
+              <button
+                class="lg:hidden border absolute bottom-5 p-2 bg-black text-[white] left-[50%] translate-x-[-50%]"
+              >
+                Explore More
+              </button>
+            </div>
+            <div class="text-[white] flex justify-center items-center flex-col backFace">
+              <h3 class="font-[600] text-[green] text-[25px]">
+                Explore it <i class="fa-solid fa-arrow-down"></i>
+              </h3>
+              <p class="w-[85%] mt-5">
+                By unifying vehicle architecture, AI models, chips, and
+                software, NVIDIA is delivering a comprehensive safety system
+                designed to support the end-to-end development of autonomous
+                vehicles.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="mt-5 FirstAuto" data-aos="zoom-in">
+          <div class="FrameCard">
+            <div class="frontFace">
+              <img
+                class="w-30 h-30"
+                src="https://i0.wp.com/electriccarsreport.com/wp-content/uploads/2017/05/nvidia-toyota.jpg?fit=640%2C364&ssl=1"
+                alt=""
+              />
+              <p
+                class="text-[20px] text-[white] font-[600] flex justify-center items-center m-auto mt-5 lg:mt-10 w-[80%]"
+              >
+                Toyota, Aurora and Continental Partner with NVIDIA for Next-Gen
+                AVs
+              </p>
+
+              <button
+                class="lg:hidden border absolute bottom-5 p-2 bg-black text-[white] left-[50%] translate-x-[-50%]"
+              >
+                Explore More
+              </button>
+            </div>
+            <div class="text-[white] flex justify-center items-center flex-col backFace">
+              <h3 class="font-[600] text-[green] text-[25px]">
+                Explore it <i class="fa-solid fa-arrow-down"></i>
+              </h3>
+              <p class="w-[85%] mt-5">
+                NVIDIA’s DRIVE and Omniverse platforms help automakers design,
+                test, and validate autonomous vehicles faster by bridging the
+                gap between virtual simulation and physical deployment.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="mt-5 FirstAuto" data-aos="fade-up">
+          <div class="FrameCard">
+            <div class="frontFace">
+              <img
+                class="w-30 h-30"
+                src="https://www.edge-ai-vision.com/wp-content/uploads/2019/01/nvidia-drive-software-8.jpg"
+                alt=""
+              />
+              <p
+                class="text-[20px] text-[white] font-[600] flex justify-center items-center m-auto mt-5 lg:mt-10 w-[80%]"
+              >
+                DRIVE AI Systems Inspection Lab Achieves New Industry Safety
+                Milestones
+              </p>
+
+              <button
+                class="lg:hidden border absolute bottom-5 p-2 bg-black text-[white] left-[50%] translate-x-[-50%]"
+              >
+                Explore More
+              </button>
+            </div>
+            <div class="text-[white] flex justify-center items-center flex-col backFace">
+              <h3 class="font-[600] text-[green] text-[25px]">
+                Explore it <i class="fa-solid fa-arrow-down"></i>
+              </h3>
+              <p class="w-[85%] mt-5">
+                Read about NVIDIA's new safety and cybersecurity initiative for
+                autonomous vehicles partners.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  </body>
+
+  <script>
+    AOS.init({
+      duration: 600,
+      easing: "ease-out-cubic",
+      once: false,
+      offset: 80,
+    });
+  </script>
+</html>
