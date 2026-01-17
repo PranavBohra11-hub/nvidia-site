@@ -60,7 +60,8 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 40px 0px;
   transform: translateX(-100%);
@@ -191,7 +192,9 @@ body {
   visibility: visible;
 }
 
-.SolutionLi { position: relative; }
+.SolutionLi {
+  position: relative;
+}
 
 .SolutionLi:hover .SolutionData,
 .SolutionData:hover {
@@ -200,4 +203,17 @@ body {
   transform: translateY(0);
   pointer-events: auto;
   visibility: visible;
+}
+
+.GTC-head {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+}
+
+.GTCP {
+  border: 1px solid transparent;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
 }
